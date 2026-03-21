@@ -36,85 +36,85 @@ const Home = () => {
       subtitle: 'Smart Cities and Healthcare',
       publisher: 'Routledge',
       link: 'https://www.routledge.com/Leveraging-the-Potential-of-Artificial-Intelligence-in-the-Real-World-Smart-Cities-and-Healthcare/Tran-Onyema-Abougreen/p/book/9781032667485',
-      image: '/book2.jpg',
+      image: './book2.jpg',
     },
     {
       title: 'Hybrid Intelligence',
       subtitle: 'Theories and Applications',
       publisher: 'Springer',
       link: 'https://link.springer.com/book/9789819677528',
-      image: '/book6.jpeg',
+      image: './book6.jpeg',
     },
     {
       title: 'Defending the Metaverse',
       subtitle: 'Cybersecurity Strategies for the Next Generation Internet',
       publisher: 'Routledge',
       link: 'https://www.routledge.com/Defending-the-Metaverse-Cybersecurity-Strategies-for-the-Next-Generation-Internet/Sheth-Ouaissa-Ouaissa-Onyema-Parekha/p/book/9781032946832',
-      image: '/book1.jpeg',
+      image: './book1.jpeg',
     },
     {
       title: 'Transformative Role of Transformer Models in Healthcare',
       subtitle: '',
       publisher: 'IGI Global',
       link: 'https://www.igi-global.com/book/transformative-role-transformer-models-healthcare/367328',
-      image: '/book7.jpeg',
+      image: './book7.jpeg',
     },
     {
       title: 'Artificial Intelligence and Cognitive Sciences for Emerging Technologies',
       subtitle: 'Volume 1',
       publisher: 'Springer',
       link: 'https://link.springer.com/book/9783032114105',
-      image: '/book9.PNG',
+      image: './book9.PNG',
     },
     {
       title: 'Artificial Intelligence and Cognitive Sciences for Emerging Technologies',
       subtitle: 'Volume 2',
       publisher: 'Springer',
       link: 'https://link.springer.com/book/9783032144294',
-      image: '/book9.PNG',
+      image: './book9.PNG',
     },
   ]
 
   const images = [
-    { src: '/z1.jpeg', alt: 'Professional Meeting' },
-    { src: '/z2.jpeg', alt: 'Professional Meeting' },
-    { src: '/z3.jpeg', alt: 'Professional Meeting' },
-    { src: '/z4.jpeg', alt: 'Professional Meeting' },
-    { src: '/z5.jpeg', alt: 'Professional Meeting' },
-    { src: '/z6.jpeg', alt: 'Professional Meeting' },
-    { src: '/z7.jpeg', alt: 'Professional Meeting' },
-    { src: '/z8.jpeg', alt: 'Professional Meeting' },
-    { src: '/z9.jpeg', alt: 'Professional Meeting' },
-    { src: '/z10.jpeg', alt: 'Professional Meeting' },
-    { src: '/z11.jpeg', alt: 'Professional Meeting' },
-    { src: '/e9.jpg', alt: 'Conference Presentation' },
-    { src: '/e10.jpg', alt: 'Academic Event' },
-    { src: '/m3.jpg', alt: 'Professional Meeting' },
-    { src: '/x6.jpg', alt: 'Professional Meeting' },
-    { src: '/m8.jpg', alt: 'Professional Meeting' },
-    { src: '/m9.jpg', alt: 'Professional Meeting' },
-    { src: '/t6.jpg', alt: 'Professional Meeting' },
-    { src: '/t7.jpg', alt: 'Professional Meeting' },
-    { src: '/a1.jpg', alt: 'Professional Meeting' },
-    { src: '/a2.jpg', alt: 'Professional Meeting' },
-    { src: '/a3.jpg', alt: 'Professional Meeting' },
-    { src: '/a5.jpg', alt: 'Professional Meeting' },
-    { src: '/a6.jpg', alt: 'Professional Meeting' },
-    { src: '/b2.jpg', alt: 'Professional Meeting' },
-    { src: '/b9.jpg', alt: 'Professional Meeting' },
-    { src: '/bg2.jpg', alt: 'Professional Meeting' },
-    { src: '/b7.jpg', alt: 'Professional Meeting' },
-    { src: '/cap.jpg', alt: 'Professional Meeting' },
-    { src: '/good.jpg', alt: 'Professional Meeting' },
-    { src: '/nice.jpg', alt: 'Professional Meeting' },
-    { src: '/q21.jpg', alt: 'Professional Meeting' },
-    { src: '/sit.jpg', alt: 'Professional Meeting' },
-    { src: '/a7.jpg', alt: 'Academic Event' },
-    { src: '/a8.jpg', alt: 'Academic Event' },
-    { src: '/about1.jpg', alt: 'Academic Event' },
-    { src: '/about2.jpg', alt: 'Academic Event' },
-    { src: '/m1.jpg', alt: 'Professional Meeting' },
-    { src: '/m2.jpg', alt: 'Professional Meeting' },
+    { src: './z1.jpeg', alt: 'Professional Meeting' },
+    { src: './z2.jpeg', alt: 'Professional Meeting' },
+    { src: './z3.jpeg', alt: 'Professional Meeting' },
+    { src: './z4.jpeg', alt: 'Professional Meeting' },
+    { src: './z5.jpeg', alt: 'Professional Meeting' },
+    { src: './z6.jpeg', alt: 'Professional Meeting' },
+    { src: './z7.jpeg', alt: 'Professional Meeting' },
+    { src: './z8.jpeg', alt: 'Professional Meeting' },
+    { src: './z9.jpeg', alt: 'Professional Meeting' },
+    { src: './z10.jpeg', alt: 'Professional Meeting' },
+    { src: './z11.jpeg', alt: 'Professional Meeting' },
+    { src: './e9.jpg', alt: 'Conference Presentation' },
+    { src: './e10.jpg', alt: 'Academic Event' },
+    { src: './m3.jpg', alt: 'Professional Meeting' },
+    { src: './x6.jpg', alt: 'Professional Meeting' },
+    { src: './m8.jpg', alt: 'Professional Meeting' },
+    { src: './m9.jpg', alt: 'Professional Meeting' },
+    { src: './t6.jpg', alt: 'Professional Meeting' },
+    { src: './t7.jpg', alt: 'Professional Meeting' },
+    { src: './a1.jpg', alt: 'Professional Meeting' },
+    { src: './a2.jpg', alt: 'Professional Meeting' },
+    { src: './a3.jpg', alt: 'Professional Meeting' },
+    { src: './a5.jpg', alt: 'Professional Meeting' },
+    { src: './a6.jpg', alt: 'Professional Meeting' },
+    { src: './b2.jpg', alt: 'Professional Meeting' },
+    { src: './b9.jpg', alt: 'Professional Meeting' },
+    { src: './bg2.jpg', alt: 'Professional Meeting' },
+    { src: './b7.jpg', alt: 'Professional Meeting' },
+    { src: './cap.jpg', alt: 'Professional Meeting' },
+    { src: './good.jpg', alt: 'Professional Meeting' },
+    { src: './nice.jpg', alt: 'Professional Meeting' },
+    { src: './q21.jpg', alt: 'Professional Meeting' },
+    { src: './sit.jpg', alt: 'Professional Meeting' },
+    { src: './a7.jpg', alt: 'Academic Event' },
+    { src: './a8.jpg', alt: 'Academic Event' },
+    { src: './about1.jpg', alt: 'Academic Event' },
+    { src: './about2.jpg', alt: 'Academic Event' },
+    { src: './m1.jpg', alt: 'Professional Meeting' },
+    { src: './m2.jpg', alt: 'Professional Meeting' },
   ]
 
   const videos = [
@@ -296,10 +296,10 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                 {/* Main Image - Original with background */}
                 <div className="relative">
                   <img
-                    src="/hodpic5.png"
+                    src="./hodpic5.png"
                     alt="Edeh Michael Onyema, PhD"
                     className="relative z-10 w-full h-auto object-cover rounded-lg md:rounded-2xl shadow-2xl"
-                    onError={(e) => { e.target.src = '/hodpic5.png' }}
+                    onError={(e) => { e.target.src = './hodpic5.png' }}
                   />
                 </div>
 
@@ -374,7 +374,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
           </motion.div>
         </div>
       </section>
-      <img src="/sit.jpg" alt="sit" className='w-full' />
+      <img src="./sit.jpg" alt="sit" className='w-full' />
       
 
 
