@@ -292,14 +292,14 @@ const [selectedVideo, setSelectedVideo] = useState(null)
             >
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                 {/* Glow Effect Behind Image */}
-                
 
                 {/* Main Image - Original with background */}
                 <div className="relative">
                   <img
                     src="/hodpic5.png"
                     alt="Edeh Michael Onyema, PhD"
-                    className="relative z-10 w-full h-auto object-contain mb-110"
+                    className="relative z-10 w-full h-auto object-cover rounded-lg md:rounded-2xl shadow-2xl"
+                    onError={(e) => { e.target.src = '/hodpic5.png' }}
                   />
                 </div>
 

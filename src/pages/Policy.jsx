@@ -64,7 +64,7 @@ const Policy = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {["s3", "b2", "good","q21","n8","n9","q1","q2","q22"].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }} className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-gray-200">
-                <img src={`/public/${item}.jpg`} alt={`Media appearance ${item}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = '/public/q22.jpg' }} />
+                <img src={`/${item}.jpg`} alt={`Media appearance ${item}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = '/q22.jpg' }} />
               </motion.div>
             ))}
           </div>

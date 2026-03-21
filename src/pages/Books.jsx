@@ -37,7 +37,7 @@ const Books = () => {
                 <a href={book.link} target="_blank" rel="noopener noreferrer" className="block group h-full">
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-                      <img src={book.image} alt={book.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = '/sample-book-placeholder.jpg' }} />
+                      <img src={book.image} alt={book.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = '/book2.jpg' }} />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                         <span className="text-white font-medium flex items-center">View Book <ExternalLink className="ml-2 w-4 h-4" /></span>
                       </div>
