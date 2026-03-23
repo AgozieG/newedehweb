@@ -176,6 +176,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
     'Dean, Faculty of Allied Health and Applied Sciences, Coal City University, Enugu, Nigeria',
     'Postdoctoral Fellow, Research Institute of IoT/Cybersecurity, National Kaohsiung University of Science and Technology, Taiwan',
     'Adjunct Professor, Enugu State University of Science and Technology (ESUT), Nigeria',
+    "Member,  TETFUND National Advisory Committee  on Robotics, Cybersecurity, Artificial Intelligence and Coding",
     'Member, International Advisory Board, Gurugram University, India',
     'Former Deputy Dean, Faculty of Allied Health and Applied Sciences, Coal City University, Enugu, Nigeria',
     'Former Director of ICT, Coal City University, Enugu, Nigeria',
