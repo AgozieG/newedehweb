@@ -297,10 +297,10 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                 {/* Main Image - Original with background */}
                 <div className="relative">
                   <img
-                    src="/newedehweb/hodpic5.png"
+                    src="./hodpic5.png"
                     alt="Edeh Michael Onyema, PhD"
-                    className="relative z-10 w-full h-auto object-cover rounded-lg md:rounded-2xl shadow-2xl"
-                    onError={(e) => { e.target.src = 'hodpic5.png' }}
+                    className="relative z-10 w-full h-auto object-cover rounded-lg md:rounded-2xl"
+                    onError={(e) => { e.target.src = './hodpic5.png' }}
                   />
                 </div>
 
