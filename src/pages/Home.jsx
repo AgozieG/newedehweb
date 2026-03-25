@@ -31,6 +31,7 @@ const Home = () => {
   ]
 
   const books = [
+    
     {
       title: 'Leveraging the Potential of Artificial Intelligence in the Real World',
       subtitle: 'Smart Cities and Healthcare',
@@ -72,6 +73,30 @@ const Home = () => {
       publisher: 'Springer',
       link: 'https://link.springer.com/book/9783032144294',
       image: './book9.PNG',
+    },
+    { 
+      title: 'Introduction to Compiler Construction', 
+      subtitle: '2nd Edition', 
+      publisher: 'Cropsworld Concepts', 
+      image: './book3.jpg' 
+    },
+    { 
+      title: 'Computer Installation Management', 
+      subtitle: '', 
+      publisher: 'Cropsworld Concepts',
+      image: './book4.jpg'
+    },
+    { 
+      title: 'Discrete Structures', 
+      subtitle: 'Foundations and Applications for Computer Science', 
+      publisher: 'Cropsworld Concepts', year: '2024', 
+      image: './book5.jpg', editors: 'Ngene, N; Udeh, CC; and Edeh, MO. (Eds.)', isbn: '' 
+    },
+    { 
+      title: 'Introduction to Computer Architecture and Embedded Design with Arduino', 
+      subtitle: '', 
+      publisher: 'Cropsworld Concepts',
+      image: './book8.jpg'
     },
   ]
 

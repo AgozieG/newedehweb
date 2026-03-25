@@ -10,11 +10,11 @@ const Books = () => {
     { title: 'Transformative Role of Transformer Models in Healthcare', subtitle: '', publisher: 'IGI Global', year: '2025', link: 'https://www.igi-global.com/book/transformative-role-transformer-models-healthcare/367328', image: './book7.jpeg', editors: 'Sbai, A., Khan, M., Dutta, P., Davim, J., & Onyema, EM. (Eds.)', isbn: '' },
     { title: 'Artificial Intelligence and Cognitive Sciences for Emerging Technologies', subtitle: 'Volume 1', publisher: 'Springer', year: '2022', link: 'https://link.springer.com/book/9783032114105', image: './book9.PNG', editors: '', isbn: '9783032114105' },
     { title: 'Artificial Intelligence and Cognitive Sciences for Emerging Technologies', subtitle: 'Volume 2', publisher: 'Springer', year: '2023', link: 'https://link.springer.com/book/9783032144294', image: './book9.PNG', editors: '', isbn: '9783032144294' },
-    { title: 'Introduction to Compiler Construction', subtitle: '2nd Edition', publisher: 'Cropsworld Concepts', year: '2025', link: '#', image: './book8.jpg', editors: 'Udeh, CC; and Edeh, MO. (Eds.)', isbn: '' },
-    { title: 'Computer Installation Management', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', link: '#', image: './book8.jpg', editors: 'Udeh, CC; Ngene, N; and Edeh, MO. (Eds.)', isbn: '' },
-    { title: 'Discrete Structures', subtitle: 'Foundations and Applications for Computer Science', publisher: 'Cropsworld Concepts', year: '2024', link: '#', image: './book9.PNG', editors: 'Ngene, N; Udeh, CC; and Edeh, MO. (Eds.)', isbn: '' },
-    { title: 'Introduction to Computer Architecture and Embedded Design with Arduino', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', link: '#', image: './book10.jpg', editors: 'Udeh, CC; and Onyema EM', isbn: '9789877745632' },
-    { title: 'Introductions To Digital Systems Designs', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', link: '#', image: './book11.jpg', editors: '', isbn: '' },
+    { title: 'Introduction to Compiler Construction', subtitle: '2nd Edition', publisher: 'Cropsworld Concepts', year: '2025', image: './book3.jpg', editors: 'Udeh, CC; and Edeh, MO. (Eds.)', isbn: '' },
+    { title: 'Computer Installation Management', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', image: './book4.jpg', editors: 'Udeh, CC; Ngene, N; and Edeh, MO. (Eds.)', isbn: '' },
+    { title: 'Discrete Structures', subtitle: 'Foundations and Applications for Computer Science', publisher: 'Cropsworld Concepts', year: '2024', image: './book5.jpg', editors: 'Ngene, N; Udeh, CC; and Edeh, MO. (Eds.)', isbn: '' },
+    { title: 'Introduction to Computer Architecture and Embedded Design with Arduino', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', image: './book8.jpg', editors: 'Udeh, CC; and Onyema EM', isbn: '9789877745632' },
+    { title: 'Introductions To Digital Systems Designs', subtitle: '', publisher: 'Cropsworld Concepts', year: '2025', image: './book10.jpeg', editors: '', isbn: '' },
   ]
 
   return (
