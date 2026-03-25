@@ -6,12 +6,12 @@ const AdsFliers = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const fliers = [
-    { src: './sample-flier-1.jpg', title: 'Conference Announcement', date: '2024' },
-    { src: './sample-flier-2.jpg', title: 'Workshop Invitation', date: '2024' },
-    { src: './sample-flier-3.jpg', title: 'Book Launch Event', date: '2023' },
-    { src: './sample-flier-4.jpg', title: 'Seminar Series', date: '2023' },
-    { src: './sample-flier-5.jpg', title: 'Research Collaboration', date: '2023' },
-    { src: './sample-flier-6.jpg', title: 'Training Program', date: '2022' },
+    { src: './sample-flier-1.jpg', title: '', date: '' },
+    { src: './sample-flier-2.jpg', title: '', date: '' },
+    { src: './sample-flier-3.jpg', title: '', date: '' },
+    { src: './sample-flier-4.jpg', title: '', date: '' },
+    { src: './sample-flier-5.jpg', title: '', date: '' },
+    { src: './sample-flier-6.jpg', title: '', date: '' },
   ]
 
   return (
@@ -31,7 +31,7 @@ const AdsFliers = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {fliers.map((flier, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.05 }} viewport={{ once: true }} className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg cursor-pointer group bg-gray-100" onClick={() => setSelectedImage(index)}>
-                <img src={flier.src} alt={flier.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { e.target.src = './q1.jpg' }} />
+                <img src={flier.src} alt={flier.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { e.target.src = './white.jpg' }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4">
                     <span className="text-amber-400 text-xs font-semibold">{flier.date}</span>
