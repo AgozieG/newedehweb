@@ -52,7 +52,7 @@ const About = () => {
               <div className="relative">
                 <motion.div animate={{ rotate: 360 }} transition={{ duration: 20, repeat: Infinity, ease: 'linear' }} className="absolute -inset-4 border-2 border-dashed border-amber-400/30 rounded-full" />
                 <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl">
-                  <img src="/hodpic.jpeg" alt="Edeh Michael Onyema, PhD" className="w-full h-full object-cover" onError={(e) => { e.target.src = '/sample-profile.jpg' }} />
+                  <img src="./hodpic5.png" alt="Edeh Michael Onyema, PhD" className="w-full h-full object-cover" onError={(e) => { e.target.src = '/sample-profile.jpg' }} />
                 </div>
               </div>
             </motion.div>

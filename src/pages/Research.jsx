@@ -67,7 +67,7 @@ const Research = () => {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Explore <span className="gradient-text">Publications</span></h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[{ name: 'Journal Articles', path: '/journals', count: '130+ Articles' }, { name: 'Books', path: '/books', count: 'Multiple Books' }, { name: 'Newspapers', path: '/news', count: 'Media Features' }, { name: 'Conferences', path: '/presentations', count: 'Presentations' }].map((item, index) => (
+            {[{ name: 'Journal Articles', path: '/journals', count: '150+ Articles' }, { name: 'Books', path: '/books', count: 'Multiple Books' }, { name: 'Newspapers', path: '/news', count: 'Media Features' }, { name: 'Conferences', path: '/presentations', count: 'Presentations' }].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }}>
                 <Link to={item.path} className="block bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
                   <h3 className="font-semibold text-gray-900 mb-2">{item.name}</h3>
@@ -84,7 +84,7 @@ const Research = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">Interested in <span className="text-amber-400">Collaboration?</span></h2>
             <p className="text-gray-300 mb-8 text-lg">Prof. Edeh is available for research collaborations and assignments.</p>
-            <a href="/send-file" className="inline-flex items-center px-8 py-4 bg-amber-500 text-white rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300">Get in Touch</a>
+            <Link to="/send-file" className="inline-flex items-center px-8 py-4 bg-amber-500 text-white rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300">Get in Touch</Link>
           </motion.div>
         </div>
       </section>
