@@ -24,7 +24,7 @@ const About = () => {
       <section className="relative py-20  text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
+            <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className='-mt-20'>
               <h1 className="font-serif text-3xl sm:text-4xl text-black font-bold mb-4">
                 Edeh Michael Onyema, PhD
               </h1>
@@ -50,9 +50,9 @@ const About = () => {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="flex justify-center">
               <div className="relative">
-                <motion.div animate={{ rotate: 360 }} transition={{ duration: 20, repeat: Infinity, ease: 'linear' }} className="absolute -inset-4 border-2 border-dashed border-amber-400/30 rounded-full" />
-                <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl">
-                  <img src="./hodpic5.png" alt="Edeh Michael Onyema, PhD" className="w-full h-full object-cover" onError={(e) => { e.target.src = '/sample-profile.jpg' }} />
+                <motion.div/>
+                <div>
+                  <img src="./quality.png" alt="Edeh Michael Onyema, PhD" className="w-auto h-160 -mt-20" onError={(e) => { e.target.src = './quality.png' }} />
                 </div>
               </div>
             </motion.div>
@@ -62,7 +62,7 @@ const About = () => {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.4, duration: 0.8 }}
-                    className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
+                    className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8"
                   >
                     {[
                       { icon: BookOpen, value: '150+', label: 'Publications' },

@@ -175,16 +175,16 @@ const Journals = () => {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="relative py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6">Journal <span className="text-amber-400">Publications</span></h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">Over 160 peer-reviewed publications and research articles across top-tier international journals and conferences</p>
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-black">Journal Publications</h1>
+            <p className="text-lg text-gray-800 max-w-3xl mx-auto">Over 150 peer-reviewed publications and research articles across top-tier international journals and conferences</p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Search Bar */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mb-12">
@@ -213,7 +213,8 @@ const Journals = () => {
                 animate={{ opacity: 1 }}
                 className="text-center text-sm text-gray-500 mt-3"
               >
-                {searchTerm ? `Found ${filteredJournals.length} result${filteredJournals.length !== 1 ? 's' : ''}` : `Showing all ${journals.length} publications`}
+                {searchTerm ? `Found ${filteredJournals.length} result${filteredJournals.length !== 1 ? 's' : ''}` : `Showing all 150 publications`}
+                {/* ${journals.length} */}
               </motion.p>
             </div>
           </motion.div>

@@ -181,6 +181,8 @@ const [selectedVideo, setSelectedVideo] = useState(null)
 
   const academicExperience = [
     'Shobhit University, India',
+    'Enugu State University of Science and Technology (ESUT), Nigeria',
+    'Michael Okpara University of Agriculture Umudike, Nigeria',
     'Southwestern University, Ogun State',
     'Coal City University, Enugu, Nigeria',
     'Spiritan University Nneochi, Abia State, Nigeria',
@@ -417,7 +419,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="inline-block text-black font-semibold text-sm tracking-wider mb-4"
               >
-                Prof. Michael has taught, supervised, and mentored students in different institutions across the world including...
+                Prof. Michael has taught, supervised, and mentored students in different institutions across the world including:
               </motion.span>
           </motion.div>
 

@@ -12,8 +12,8 @@ const Research = () => {
   ]
 
   const stats = [
-    { number: '130+', label: 'Publications' },
-    { number: '394K+', label: 'ResearchGate Reads' },
+    { number: '150+', label: 'Publications' },
+    { number: '400K+', label: 'ResearchGate Reads' },
     { number: 'Multiple', label: 'Books Authored' },
     { number: 'Global', label: 'Collaborations' },
   ]

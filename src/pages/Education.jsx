@@ -12,7 +12,7 @@ const Education = () => {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+      <section className="relative py-20 text-white">
         <div className="absolute inset-0 overflow-hidden">
           <img src="/sample-education-hero.jpg" alt="Education" className="w-full h-full object-cover opacity-20" onError={(e) => { e.target.style.display = 'none' }} />
         </div>
@@ -20,12 +20,12 @@ const Education = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto">
             <GraduationCap className="w-16 h-16 mx-auto mb-6 text-amber-400" />
             <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6"><span className="text-amber-400">Education</span></h1>
-            <p className="text-lg text-blue-100 leading-relaxed">A passionate advocate for transformative education, Prof. Edeh has dedicated his academic career to enhancing learning systems and promoting inclusive access to quality education.</p>
+            <p className="text-lg text-gray-800 leading-relaxed">A passionate advocate for transformative education, Prof. Edeh has dedicated his academic career to enhancing learning systems and promoting inclusive access to quality education.</p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="max-w-3xl mx-auto text-center mb-16">
             <p className="text-gray-600 text-lg leading-relaxed">His research explores curriculum development, education policy reform, and teacher training, with a special focus on marginalized and underserved populations. As an educator, he fosters critical thinking, innovation, and civic responsibility among his students, believing that education is the cornerstone of societal advancement and personal empowerment.</p>

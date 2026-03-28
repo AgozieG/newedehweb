@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, Linkedin, Facebook,Shield,Award, BookOpen, Globe } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const socialLinks = [
@@ -41,10 +42,10 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold mb-4 text-amber-400">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-300 hover:text-amber-400 transition-colors">About Me</a></li>
-              <li><a href="/research" className="text-gray-300 hover:text-amber-400 transition-colors">Research</a></li>
-              <li><a href="/books" className="text-gray-300 hover:text-amber-400 transition-colors">Books</a></li>
-              <li><a href="/test" className="text-gray-300 hover:text-amber-400 transition-colors">Testimonials</a></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-amber-400 transition-colors">About Me</Link></li>
+              <li><Link to="/research" className="text-gray-300 hover:text-amber-400 transition-colors">Research</Link></li>
+              <li><Link to="/books" className="text-gray-300 hover:text-amber-400 transition-colors">Books</Link></li>
+              <li><Link to="/test" className="text-gray-300 hover:text-amber-400 transition-colors">Testimonials</Link></li>
             </ul>
           </motion.div>
 
@@ -57,7 +58,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-amber-400">Connect</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <a
+                <Link
                   key={social.label}
                   href={social.href}
                   target="_blank"
@@ -66,7 +67,7 @@ const Footer = () => {
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>

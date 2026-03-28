@@ -10,7 +10,7 @@ const Submit = () => {
   // 4. Copy your FORM_ID from the endpoint: https://formspree.io/f/{FORM_ID}
   // 5. Paste it below in the FORMSPREE_FORM_ID constant
   
-  const FORMSPREE_FORM_ID = 'xdawbvyl' // Replace with your Formspree Form ID
+  const FORMSPREE_FORM_ID = 'mbdpdqbr' // Replace with your Formspree Form ID
 
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '', attachment: null })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -90,15 +90,15 @@ const Submit = () => {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      {/* <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <Upload className="w-16 h-16 mx-auto mb-6 text-amber-400" />
             <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6">Upload & <span className="text-amber-400">Send File</span></h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">Submit documents, research papers, or any files for review. Messages will be sent to agozieiwunna@gmail.com</p>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">Submit documents, research papers, or any files for review. Messages will be sent to michael.edeh@ebsu.edu.ng</p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">

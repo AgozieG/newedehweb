@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2">
             <span className="font-serif text-xl sm:text-2xl font-bold text-gray-900">
-              Edeh Michael Onyema,<span className="text-amber-500"> PhD</span>
+              Michael Onyema Edeh, PhD
             </span>
           </Link>
 

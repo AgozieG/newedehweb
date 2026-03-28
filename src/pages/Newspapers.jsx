@@ -15,17 +15,17 @@ const Newspapers = () => {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="relative py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <Newspaper className="w-16 h-16 mx-auto mb-6 text-amber-400" />
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6">Newspaper <span className="text-amber-400">Publications</span></h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">Featured articles and opinion pieces in leading Nigerian newspapers</p>
+            <Newspaper className="w-16 h-16 mx-auto mb-6 text-black" />
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-black">Newspaper Publications</h1>
+            <p className="text-lg text-gray-800 max-w-3xl mx-auto">Featured articles and opinion pieces in leading Nigerian newspapers</p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.map((article, index) => (

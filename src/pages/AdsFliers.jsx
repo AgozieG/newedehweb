@@ -16,7 +16,7 @@ const AdsFliers = () => {
 
   return (
     <div className="pt-20">
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      {/* <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <FileImage className="w-16 h-16 mx-auto mb-6 text-amber-400" />
@@ -24,7 +24,7 @@ const AdsFliers = () => {
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">Event announcements, workshop invitations, and promotional materials</p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
