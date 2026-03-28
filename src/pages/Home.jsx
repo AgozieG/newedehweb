@@ -213,7 +213,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
     'Adjunct Professor, Saveetha Institute of Medical and Technical Sciences, Chennai, India',
     'Adjunct Senior Lecturer, Spiritan University, Abia State, Nigeria',
     'Overseas Mentor (Visiting Scholar), Yeshwantrao Chavan College of Engineering, Nagpur, India',
-    'External Examiner, including for PhD',
+    'External Examiner in several universities incl. Michael Okpara University of Agriculture Umudike',
     'State Chairman, Nigeria Computer Society, Enugu State Chapter, Nigeria',
     'Editor of several top ranked journals',
     'Distinguished Keynote Speaker (locally and internationally)',
@@ -356,27 +356,21 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                 className={`text-gray-600 text-justify leading-relaxed text-lg ${readMore ? '' : 'line-clamp-6'}`}
               >
                 <p className="mb-4">
-                  Prof. Michael Onyema Edeh, PhD is a distinguished academic and public figure in the Nigerian and international educational communities, frequently recognized among Nigeria's top research scientists (Elsevier Scopus/Scival, 2021–2026). His leadership roles within academia, research output, and participation in professional and advisory boards underscore his expertise and influence in the fields of Computer science, Cybersecurity and educational technologies.
+                  Michael Onyema Edeh, PhD is a Professor in the Department of Computer Science at Enugu State University of Science and Technology, Nigeria. He also holds adjunct professorships at Department of Computer Science and Engineering at Shobhit University, India; Institute of Management and Technology (IMT), Enugu, Nigeria, and Enugu State College of Education Technical (ESCET), Nigeria. He is currently the Dean of the Faculty of Allied Health and Applied Sciences at Coal City University, Nigeria, and also serves as a Postdoctoral Researcher at the National Kaohsiung University of Science and Technology, Taiwan. Prof. Michael has consistently been listed among the Top Scientists in Nigeria by Elsevier SciVal (Scopus) from 2021 to 2026.
                 </p>
                 <p className="mb-4">
-                  He currently serves as the Dean, Faculty of Allied Health and Applied Sciences at Coal City University Nigeria, where he formerly held the position of Deputy Dean, SIWES (Internship program) Coordinator, Director of ICT, and Head of Department of Mathematics and Computer Science. With a career rooted in teaching, research, and service, Prof. Michael Edeh has built a reputation for excellence in Cybersecurity, educational technology, artificial intelligence, and Health informatics.
-                </p>
-                <p className="mb-4">
-                  He also contributes to initiatives on educational resilience, with involvement featured on UNESCO's Education4Resilience platform. He is also serves as the State Chairman of the Nigeria Computer Society, Enugu State Chapter, Nigeria.
+                  He is a recipient of the prestigious Chancellor's Award for Best Staff of the Year (2020) and the Vice-Chancellor's Award for Research Excellence (2023), both at Coal City University, as well as a United Nations (UN) Medal for Peace. He is a former Director of ICT at Coal City University and currently serves as the State Chairman of the Nigeria Computer Society (NCS), Enugu State Chapter.
                 </p>
                 {readMore && (
                   <>
                     <p className="mb-4">
-                      Prof. Edeh holds adjunct Professorial positions at numerous institutions in Nigeria and abroad, including Shobhit University (India), Saveetha Institute of Medical and Technical Sciences (India), Institute of Management and Technology (IMT), Enugu Nigeria; Enugu State college of Education Technical (ESCET) among others. He is also a Postdoctoral Fellow at the Research Institute of IoT Cybersecurity, National Kaohsiung University of Science and Technology, Taiwan.
+                      Prof. Michael has taught and mentored students across several tertiary education institutions, including Enugu State University of Science and Technology; Southwestern University; Coal City University; Spiritan University, Nneochi; National Open University of Nigeria (NOUN); Alex Ekwueme Federal University, Ebonyi State; Gregory University, Uturu; Enugu State College of Education Technical (affiliated with Nnamdi Azikiwe University); Institute of Management and Technology (IMT), Enugu; African Thinkers Community of Inquiry College of Education (ATCOI-COE), Enugu; Pogil College of Health Technology, Ogun State; and Federal Science and Technical College, Ogun State. He has also served as an External Examiner for many universities, both locally and internationally.
                     </p>
                     <p className="mb-4">
-                      His research spans over 130 peer-reviewed publications across top-tier journals such as Springer, Elsevier, IEEE, MDPI, Wiley, Sage, De Gruyter and Taylor & Francis etc. He has authored several books indexed in Scopus and Web of science. His research publications have attracted thousands of citations on Google Scholar and over 394,000 reads on ResearchGate.
-                    </p>
-                    <p className="mb-4">
-                      In addition to his academic roles, he serves as an editor and reviewer for several international journals and conference proceedings. He has presented Keynote lectures and research papers at Several international conferences across the world, addressing topics from Cybersecurity, education technology, and Health informatics and Artificial intelligence.
+                      Prof. Michael has delivered keynote addresses at numerous organizations and conferences, and he is also a public policy analyst featured on popular media platforms such as Channels Television. He has published over 150 scholarly papers in reputable journals, authored several books, and served as an editor for some leading journals. His publications have attracted thousands of citations on Google Scholar and over 396,000 reads on ResearchGate.
                     </p>
                     <p>
-                      He is the recipient of multiple honors, including the Vice Chancellor's Research Excellence Award (2023), Chancellor's Best Staff Award (2020), Student Spotlight at Peace Operation Training Institute, USA in 2011, and a United Nations Peace Medal for his earlier contribution to global peacekeeping during his military service. He features as Guest analyst on public affairs programs across various television and radio platforms, including Channels Television, Dream FM, Radio Nigeria, and several others.
+                      He is currently a member of the Tertiary Education Trust Fund (TETFund) National Committee on Robotics, Artificial Intelligence, Coding, and Cybersecurity in Nigeria.
                     </p>
                   </>
                 )}
