@@ -174,11 +174,11 @@ const Journals = () => {
   }, [searchTerm, journals])
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 ">
       <section className="relative py-20 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-black">Journal Publications</h1>
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-amber-500">Journal Publications</h1>
             <p className="text-lg text-gray-800 max-w-3xl mx-auto">Over 150 peer-reviewed publications and research articles across top-tier international journals and conferences</p>
           </motion.div>
         </div>
@@ -220,7 +220,7 @@ const Journals = () => {
           </motion.div>
 
           {/* Results */}
-          <div className="space-y-6">
+          <div className="space-y-6 -mt-15">
             {filteredJournals.length > 0 ? (
               filteredJournals.map((journal, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.02 }} viewport={{ once: true }} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">

@@ -339,7 +339,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
       {/* About Section with Read More */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-15">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -441,7 +441,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
       {/* Leadership Roles */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -474,7 +474,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
       {/* Books Carousel */}
-      <section className="py-20 bg-gradient-to-br from-white to-amber-50 text-white">
+      <section className="py-20 bg-gradient-to-br from-white to-amber-50 text-white -mt-25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -545,7 +545,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
       {/* Images Carousel */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-15">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -591,7 +591,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
       {/* Videos Carousel */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 -mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -647,7 +647,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
           </div>
         </div>
       </section>
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white -mt-20">
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
         <div className="max-w-6xl mx-auto">
           <motion.div

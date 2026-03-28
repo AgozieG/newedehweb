@@ -18,8 +18,8 @@ const Newspapers = () => {
       <section className="relative py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <Newspaper className="w-16 h-16 mx-auto mb-6 text-black" />
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-black">Newspaper Publications</h1>
+            <Newspaper className="w-16 h-16 mx-auto mb-6 text-amber-500" />
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-amber-500">Newspaper Publications</h1>
             <p className="text-lg text-gray-800 max-w-3xl mx-auto">Featured articles and opinion pieces in leading Nigerian newspapers</p>
           </motion.div>
         </div>

@@ -61,7 +61,7 @@ const Research = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 -mt-25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Explore <span className="gradient-text">Publications</span></h2>

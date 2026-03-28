@@ -22,8 +22,8 @@ const Conferences = () => {
       <section className="relative py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <Mic className="w-16 h-16 mx-auto mb-6 text-black" />
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-black">Conferences and <span className="text-black">Presentations</span></h1>
+            <Mic className="w-16 h-16 mx-auto mb-6 text-amber-500" />
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-amber-500">Conferences and <span className="text-amber-500">Presentations</span></h1>
             <p className="text-lg text-gray-800 max-w-3xl mx-auto">Keynote speeches, invited talks, and research presentations at international conferences</p>
           </motion.div>
         </div>
