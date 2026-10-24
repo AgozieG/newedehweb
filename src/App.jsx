@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -22,9 +22,20 @@ import AdsFliers from './pages/AdsFliers'
 import AdsVideos from './pages/AdsVideos'
 import Submit from './pages/Submit'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  React.useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes>

@@ -1,26 +1,24 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Upload, Send, FileText, Mail, MessageSquare, Paperclip, AlertCircle } from 'lucide-react'
+import { Upload, Send, FileText, MessageSquare, Paperclip, AlertCircle } from 'lucide-react'
 
 const Submit = () => {
-  // SETUP INSTRUCTIONS:
-  // 1. Go to https://formspree.io
-  // 2. Sign up for a FREE account (no payment required for attachments!)
-  // 3. Create a new form and select "Email" as the destination
-  // 4. Copy your FORM_ID from the endpoint: https://formspree.io/f/{FORM_ID}
-  // 5. Paste it below in the FORMSPREE_FORM_ID constant
-  
-  const FORMSPREE_FORM_ID = 'mbdpdqbr' // Replace with your Formspree Form ID
-
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '', attachment: null })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    subject: '',
+    message: '',
+    attachment: null
+  })
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-    setError('')
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
   }
 
   const handleFileChange = (e) => {
@@ -29,78 +27,66 @@ const Submit = () => {
       setError('File size must be less than 5MB')
       return
     }
-    setFormData((prev) => ({ ...prev, attachment: file }))
+    setFormData(prev => ({
+      ...prev,
+      attachment: file
+    }))
     setError('')
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setError('Please fill in all required fields')
-      return
-    }
-
-    if (FORMSPREE_FORM_ID === 'your_form_id_here') {
-      setError('Please configure your Formspree Form ID first. See instructions below.')
-      return
-    }
-
     setIsSubmitting(true)
     setError('')
 
     try {
-      // Create FormData object for multipart form submission (supports file uploads)
-      const form = new FormData()
-      form.append('name', formData.name)
-      form.append('email', formData.email)
-      form.append('subject', formData.subject)
-      form.append('message', formData.message)
-      
-      // Add attachment if present
+      const formDataToSend = new FormData()
+      formDataToSend.append('name', formData.name)
+      formDataToSend.append('subject', formData.subject)
+      formDataToSend.append('message', formData.message)
       if (formData.attachment) {
-        form.append('attachment', formData.attachment)
+        formDataToSend.append('attachment', formData.attachment)
       }
 
-      // Send to Formspree
-      const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+      const response = await fetch('http://localhost:5001/api/submit', {
         method: 'POST',
-        body: form,
-        headers: {
-          'Accept': 'application/json',
-        },
+        body: formDataToSend
       })
 
-      if (response.ok) {
-        setIsSubmitting(false)
+      const data = await response.json()
+
+      if (data.success) {
         setSubmitted(true)
-        setFormData({ name: '', email: '', subject: '', message: '', attachment: null })
-        // Reset success message after 5 seconds
-        setTimeout(() => setSubmitted(false), 5000)
+        setFormData({
+          name: '',
+          subject: '',
+          message: '',
+          attachment: null
+        })
       } else {
-        throw new Error('Failed to send form')
+        setError(data.message || 'Failed to send message')
       }
-    } catch (err) {
+    } catch (error) {
+      console.error('Error:', error)
+      setError('Failed to send message. Please try again.')
+    } finally {
       setIsSubmitting(false)
-      setError(err.message || 'Failed to send email. Please try again or contact support.')
-      console.error('Form submission error:', err)
     }
   }
 
   return (
     <div className="pt-20">
-      {/* <section className="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="relative py-20  text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <Upload className="w-16 h-16 mx-auto mb-6 text-amber-400" />
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6">Upload & <span className="text-amber-400">Send File</span></h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">Submit documents, research papers, or any files for review. Messages will be sent to michael.edeh@ebsu.edu.ng</p>
+            <Upload className="w-16 h-16 mx-auto mb-6 text-amber-400 -mt-10" />
+            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-6"><span className="text-amber-400">Upload and Send File</span></h1>
+            <p className="text-lg text-gray-900 max-w-3xl mx-auto">Submit documents, research papers, or any files for review. Messages will be sent to michael.edeh@ebsu.edu.ng</p>
           </motion.div>
         </div>
-      </section> */}
+      </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white -mt-30">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="bg-gray-50 rounded-2xl p-8 shadow-lg">
             {submitted ? (
@@ -109,7 +95,7 @@ const Submit = () => {
                   <Send className="w-10 h-10 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-2">Message Sent Successfully!</h3>
-                <p className="text-gray-600 mb-6">Thank you for your submission. We will get back to you soon at {formData.email}.</p>
+                <p className="text-gray-600 mb-6">Thank you for your submission. We will get back to you soon.</p>
                 <button onClick={() => setSubmitted(false)} className="px-6 py-3 bg-amber-500 text-white rounded-full font-medium hover:bg-amber-600 transition-colors">Send Another</button>
               </motion.div>
             ) : (
@@ -121,19 +107,12 @@ const Submit = () => {
                   </motion.div>
                 )}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       <span className="flex items-center"><FileText className="w-4 h-4 mr-2" />Full Name *</span>
                     </label>
                     <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all" placeholder="Your name" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      <span className="flex items-center"><Mail className="w-4 h-4 mr-2" />Email Address *</span>
-                    </label>
-                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all" placeholder="your.email@example.com" />
                   </div>
                 </div>
 
@@ -167,7 +146,7 @@ const Submit = () => {
                 </div>
 
                 <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center px-8 py-4 bg-amber-500 text-white rounded-xl font-semibold hover:bg-amber-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
-                  {isSubmitting ? (<><div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />Sending...</>) : (<><Mail className="w-5 h-5 mr-2" />Send Email</>)}
+                  {isSubmitting ? (<><div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />Sending...</>) : (<><Send className="w-5 h-5 mr-2" />Send Email</>)}
                 </button>
               </form>
             )}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Mic, Calendar, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Conferences = () => {
   const conferences = [
@@ -10,11 +11,17 @@ const Conferences = () => {
     { title: 'Cybersecurity In A Hyper Connected World', location: 'Online', year: '2025', type: 'Invited Talk', flier: './public/present2.jpg' },
     { title: 'Computer Application to Business: Prospects and Challenges', location: 'Online', year: '2022', type: 'Speaker', flier: './public/present1.jpg' },
     { title: 'HealthCare Innovation And Smart Systems', location: 'India', year: '2024', type: 'Invited Talk', flier: './public/present3.jpg' },
-    { title: 'Conference Paper - Deep Learning Applications in Health Informatics', location: 'International Conference on Computer Science and Informatics', year: '2022', type: 'Paper Presentation', flier: './public/present9.jpeg' },
-    { title: 'Keynote Speaker - Digital Transformation in Education', location: 'Enugu State College of Education Technical (ESCET), Nigeria', year: '2022', type: 'Keynote', flier: './public/present8.jpeg' },
-    { title: 'Invited Presentation - AI and Machine Learning Research Trends', location: 'Spiritan University, Abia State, Nigeria', year: '2022', type: 'Invited Talk', flier: './public/present7.jpeg' },
-    { title: 'Conference Paper - Security Protocols for Software Defined Networks', location: 'IEEE International Conference on Decision Aid Sciences and Applications (DASA)', year: '2022', type: 'Paper Presentation', flier: './public/present6.jpeg' },
-    { title: 'Keynote Speaker - The Future of Computer Science Education', location: 'Southwestern University, Ogun State, Nigeria', year: '2021', type: 'Keynote', flier: './public/present5.jpeg' },
+    { title: 'Hybrid Intelligence: Theories And Applications', location: 'International Conference On HITA 2024', year: '2024', type: 'Invited Talk', flier: './public/present4.jpg' },
+    { title: 'Hackathon on Practical Development and Deployment of Deep Learning Models(Pre-Trained Models)', location: 'Nigeria Computer Society (NCS), Enugu State Chapter, Nigeria', year: '2024', type: 'Host', flier: './public/present5.jpg' },
+    { title: 'Hybrid Intelligence: Theories And Applications', location: 'International Conference On HITA 2024. Shobhit University Gangoh', year: '2024', type: 'Keynote Speaker', flier: './public/present6.jpg' },
+    { title: 'Cyber Security, Intelligence and National Security', location: 'Coal City University, Enugu, Nigeria', year: '2021', type: 'Invited Talk', flier: './public/present7.jpg' },
+    { title: 'Social Media as a Tool for Social Justice, Education and Carreer Advancement', location: 'Coal City University, Enugu, Nigeria', year: '2021', type: 'Keynote Speaker', flier: './public/present8.jpg' },
+    { title: 'Harnessing the Potentials of Emerging Technologies to Solve Real World Problems', location: 'Coal City University, Enugu, Nigeria', year: '2023', type: 'Keynote Speaker', flier: './public/present9.jpg' },
+    { title: 'Cybersecurity Concerns in Education Sector: Understanding the Vulnerabilities and Solutions', location: 'Shobhit University', year: '2021', type: 'Keynote Speaker', flier: './public/present10.jpg' },
+    { title: 'Advancing Technology-Based Learning in Nigeria: Prospects, Challenges and Strategies', location: 'Nigeria Computer Society (NCS), Nigeria', year: '2022', type: 'Keynote Speaker', flier: './public/present11.jpg' },
+    { title: 'Leveraging the Potential of Machine Learning in Real World', location: 'Online', year: '2022', type: 'Host', flier: './public/present13.jpg' },
+    { title: 'Artificial Intelligence And Robotics in Life Science', location: 'Rama University', year: '2024', type: 'Paper Presentation', flier: './public/present14.jpg' },
+    { title: 'Sustainability and Development in SAARC Nations: Key Issues, Opportunities and Challenges', location: 'RANGAPARA, ASSAM, INDIA', year: '2025', type: 'Invited Talk', flier: './public/con1.jpg' },
   ]
 
   return (
@@ -73,7 +80,7 @@ const Conferences = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6">Invite Prof. Edeh to Speak</h2>
             <p className="text-lg text-amber-100 mb-8">Available for keynote speeches, invited talks, and conference presentations on cybersecurity, AI/ML, education technology, and health informatics.</p>
-            <a href="mailto:mikedreamcometrue@gmail.com" className="inline-flex items-center px-8 py-4 bg-white text-amber-600 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">Request Speaking Engagement</a>
+            <Link to="/send-file" className="inline-flex items-center px-8 py-4 bg-white text-amber-600 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">Request Speaking Engagement</Link>
           </motion.div>
         </div>
       </section>

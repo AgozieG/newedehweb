@@ -76,12 +76,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="font-serif text-xl sm:text-2xl font-bold text-gray-900">
+            <span className=" -ml-4 font-serif text-xl sm:text-m font-bold text-gray-900">
               Michael Onyema Edeh, PhD
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-0">
             {navItems.map((item) => (
               <div
                 key={item.name}
