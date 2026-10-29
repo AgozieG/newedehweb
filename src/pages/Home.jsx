@@ -270,7 +270,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
           
 
                   {/* YouTube Videos Section */}
-                  <div>
+                  <div className="w-full">
                     <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
                       {videos.filter(v => !v.isShort).map((video, index) => (
                         <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.05 }} viewport={{ once: true }} className="relative rounded-xl  shadow-lg cursor-pointer group bg-gray-900" onClick={() => setSelectedVideo(video)}>
