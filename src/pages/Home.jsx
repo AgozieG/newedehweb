@@ -229,7 +229,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-140 lg:h-140 bg-gradient-to-br from-gray-50 via-white to-amber-50 overflow-hidden">
+      <section className="relative min-h-140 bg-gradient-to-br from-gray-50 via-white to-amber-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Content */}
@@ -271,7 +271,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
 
                   {/* YouTube Videos Section */}
                   <div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
                       {videos.filter(v => !v.isShort).map((video, index) => (
                         <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.05 }} viewport={{ once: true }} className="relative rounded-xl  shadow-lg cursor-pointer group bg-gray-900" onClick={() => setSelectedVideo(video)}>
                           <div className="relative aspect-video h-auto w-full bg-gray-800 rounded-lg overflow-hidden">
