@@ -229,7 +229,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative h-140  bg-gradient-to-br from-gray-50 via-white to-amber-50 overflow-hidden">
+      <section className="relative min-h-140 lg:h-140 bg-gradient-to-br from-gray-50 via-white to-amber-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Content */}
@@ -237,7 +237,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="order-2 lg:order-1 mb-90"
+              className="order-2 lg:order-1"
             >
               
 
@@ -274,7 +274,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                       {videos.filter(v => !v.isShort).map((video, index) => (
                         <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.05 }} viewport={{ once: true }} className="relative rounded-xl  shadow-lg cursor-pointer group bg-gray-900" onClick={() => setSelectedVideo(video)}>
-                          <div className="relative aspect-video h-auto w-120 bg-gray-800 rounded-lg overflow-hidden">
+                          <div className="relative aspect-video h-auto w-full bg-gray-800 rounded-lg overflow-hidden">
                             <img 
                               src={video.thumbnail} 
                               alt={video.title} 
@@ -339,7 +339,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
       </section>
 
                     {/* About Section with Read More */}
-      <section className="py-20 bg-white -mt-15">
+      <section className="py-20 bg-white lg:-mt-15">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -358,21 +358,21 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                 className={`text-gray-600 text-justify leading-relaxed text-lg ${readMore ? '' : 'line-clamp-6'}`}
               >
                 <p className="mb-4">
-                  Michael Onyema Edeh, PhD is a Professor in the Department of Computer Science at Enugu State University of Science and Technology, Nigeria. He also holds adjunct professorships at Department of Computer Science and Engineering at Shobhit University, India; Institute of Management and Technology (IMT), Enugu, Nigeria, and Enugu State College of Education Technical (ESCET), Nigeria. He is currently the Dean of the Faculty of Allied Health and Applied Sciences at Coal City University, Nigeria, and also serves as a Postdoctoral Researcher at the National Kaohsiung University of Science and Technology, Taiwan. Prof. Michael has consistently been listed among the Top Scientists in Nigeria by Elsevier SciVal (Scopus) from 2021 to 2026.
+                    Michael Onyema Edeh, PhD is a Professor in the Department of Computer Science at Enugu State University of Science and Technology, Nigeria. He is currently the Dean, Faculty of Allied Health and Applied Sciences at Coal City University, Nigeria, and a visiting Researcher at the National Kaohsiung University of Science and Technology, Taiwan. He also holds adjunct professorships at the Department of Computer Science and Engineering at Shobhit University, India; Institute of Management and Technology (IMT), Enugu, Nigeria; and Enugu State College of Education Technical, Nigeria.
                 </p>
                 <p className="mb-4">
-                  He is a recipient of the prestigious Chancellor's Award for Best Staff of the Year (2020) and the Vice-Chancellor's Award for Research Excellence (2023), both at Coal City University, as well as a United Nations (UN) Medal for Peace. He is a former Director of ICT at Coal City University and currently serves as the State Chairman of the Nigeria Computer Society (NCS), Enugu State Chapter.
+                    Michael has appeared on the Elsevier–Stanford University World's Top 2% Scientists list and has been listed among Nigeria's top scientists by Elsevier SciVal (Scopus) from 2021 to 2026. He received the Chancellor's Award for Best Staff of the Year (2020) and the Vice-Chancellor's Award for Research Excellence (2023), both at Coal City University, as well as a United Nations (UN) Medal for Peace. He is a former Director of ICT at Coal City University and the immediate past State Chairman of the Nigeria Computer Society, Enugu State.
                 </p>
                 {readMore && (
                   <>
                     <p className="mb-4">
-                      Prof. Michael has taught and mentored students across several tertiary education institutions, including Enugu State University of Science and Technology; Southwestern University; Coal City University; Spiritan University, Nneochi; National Open University of Nigeria (NOUN); Alex Ekwueme Federal University, Ebonyi State; Gregory University, Uturu; Enugu State College of Education Technical (affiliated with Nnamdi Azikiwe University); Institute of Management and Technology (IMT), Enugu; African Thinkers Community of Inquiry College of Education (ATCOI-COE), Enugu; Pogil College of Health Technology, Ogun State; and Federal Science and Technical College, Ogun State. He has also served as an External Examiner for many universities, both locally and internationally.
+                        He has taught and mentored students at Enugu State University of Science and Technology; Southwestern University; Coal City University; Spiritan University, Nneochi; National Open University of Nigeria (NOUN); Gregory University, Uturu; Enugu State College of Education Technical (affiliated with Nnamdi Azikiwe University); Institute of Management and Technology (IMT), Enugu; African Thinkers Community of Inquiry College of Education, Enugu; Pogil College of Health Technology, Ogun State; and Federal Science and Technical College, Ogun State. He has also served as an External Examiner for many universities.
                     </p>
                     <p className="mb-4">
-                      Prof. Michael has delivered keynote addresses at numerous organizations and conferences, and he is also a public policy analyst featured on popular media platforms such as Channels Television. He has published over 150 scholarly papers in reputable journals, authored several books, and served as an editor for some leading journals. His publications have attracted thousands of citations on Google Scholar and over 396,000 reads on ResearchGate.
+                        Michael has delivered keynote addresses at numerous organizations and conferences, and is a public policy analyst featured on platforms such as Channels Television. He has published over 230 scholarly papers in reputable journals, authored several books, and served as an editor for leading journals. His publications have attracted thousands of citations on Google Scholar and over 396,000 reads on ResearchGate.
                     </p>
                     <p>
-                      He is currently a member of the Tertiary Education Trust Fund (TETFund) National Committee on Robotics, Artificial Intelligence, Coding, and Cybersecurity in Nigeria.
+                        He is currently a member of the Tertiary Education Trust Fund (TETFund) National Committee on Robotics, Artificial Intelligence, and Cybersecurity in Nigeria. Michael is open to service, opportunities, collaboration, and learning.
                     </p>
                   </>
                 )}
@@ -700,7 +700,7 @@ const [selectedVideo, setSelectedVideo] = useState(null)
               className="bg-cream rounded-2xl p-8"
             >
               <h3 className="font-serif text-xl font-bold text-dark mb-6">Social Accounts</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={social.label}
@@ -710,12 +710,12 @@ const [selectedVideo, setSelectedVideo] = useState(null)
                     transition={{ delay: 0.5 + index * 0.1, duration: 0.6 }}
                     whileHover={{ scale: 1.05 }}
 
-                    className="flex items-center gap-3 p-4 bg-white rounded-xl hover:shadow-elegant transition-all duration-300 group"
+                    className="flex min-w-0 items-center gap-3 p-4 bg-white rounded-xl hover:shadow-elegant transition-all duration-300 group"
                   >
-                    <div className={`w-10 h-10 ${social.color} rounded-lg flex items-center justify-center text-white`}>
+                    <div className={`w-10 h-10 shrink-0 ${social.color} rounded-lg flex items-center justify-center text-white`}>
                       <social.icon className="w-5 h-5" />
                     </div>
-                    <span className="text-dark font-medium text-sm">{social.label}</span>
+                    <span className="min-w-0 break-words text-dark font-medium text-sm">{social.label}</span>
                   </motion.a>
                 ))}
               </div>
